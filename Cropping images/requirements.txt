@@ -1,3 +1,0 @@
-os-sys
-opencv-python
-os-sys
