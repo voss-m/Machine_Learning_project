@@ -1,4 +1,4 @@
-#!"C:\Users\klaud\OneDrive\Documents\studia\Informaryczne narzêdzia wizualizacji danych\UM\venv\Scripts\python.exe" -x
+#!"C:\Projekty\ML\Machine_Learning_project\Flask application\venv\Scripts\python.exe"
 # EASY-INSTALL-ENTRY-SCRIPT: 'pip==19.0.3','console_scripts','pip'
 __requires__ = 'pip==19.0.3'
 import re

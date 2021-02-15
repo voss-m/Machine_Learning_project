@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\klaud\OneDrive\Documents\studia\Informaryczne narzędzia wizualizacji danych\UM\venv"
+VIRTUAL_ENV="C:\Projekty\ML\Machine_Learning_project\Flask application\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

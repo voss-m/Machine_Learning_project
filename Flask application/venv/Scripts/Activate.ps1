@@ -27,7 +27,7 @@ function global:deactivate ([switch]$NonDestructive) {
 
 deactivate -nondestructive
 
-$env:VIRTUAL_ENV="C:\Users\klaud\OneDrive\Documents\studia\Informaryczne narzędzia wizualizacji danych\UM\venv"
+$env:VIRTUAL_ENV="C:\Projekty\ML\Machine_Learning_project\Flask application\venv"
 
 if (! $env:VIRTUAL_ENV_DISABLE_PROMPT) {
     # Set the prompt to include the env name
