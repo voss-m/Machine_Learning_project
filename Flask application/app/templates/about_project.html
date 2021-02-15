@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}About project{% endblock %}
+
+{% block page_content %}
+
+    <div class="panel panel-default">
+        <div class="panel-heading" style="font-size: 18px; text-align: center; font-weight: bold;">
+            Kilka słów o projekcie
+        </div>
+        <div class="panel-body">
+            <div class="media-body"   style="font-size: 16px; text-align: center;">
+                <p>Model ma na celu rozpoznanie twarzy Polskich polityków, dzięki czemu osoba, która nie interesuje się polityką, może w łatwy sposób zrobić zdjęcie, zapis ekranu lub pobrać grafikę i sprawdzić, jak się nazywa dana osoba.</p>
+                <p>Dzięki temu, po usłyszeniu wypowiedzi jednej z postaci Polskiej sceny politycznej, użytkownik może poznać jej imię i nazwisko, aby upewnić się, że w następnych wyborach podejmie bardziej świadomą decyzję poprzez zaznaczenie bądź pominięcie danego nazwiska.</p>
+                <p>Użytkownik programu jako dane wejściowe wgrywa plik z wizerunkiem polityka.</p>
+                <p>Program po przetworzeniu zdjęcia przekazuje je do modelu.</p>
+                <p>Wykorzystany do tego celu model to maszyna wektorów nośnych, wykorzystywany do rozpoznawania wzorców, między innymi w rozpoznawaniu mowy, dźwięków, obiektów, ruchów, kategoryzacji tekstów, obrazów, diagnozowaniu chorób oraz wykrywaniu twarzy.</p>
+                <p>Wynikiem działania programu są imię i nazwisko postaci na zdjęciu.</p>
+                <p>Aktualnie model nauczony jest rozpoznawać polityków z niżej wymienionej listy:</p>
+
+                    <p>Robert Biedroń</p>
+                    <p>Krzysztof Bosak</p>
+                    <p>Andrzej Duda</p>
+                    <p>Anna Grodzka</p>
+                    <p>Szymon Hołownia</p>
+                    <p>Jarosław Kaczynski</p>
+                    <p>Ryszard Kalisz</p>
+                    <p>Bronisław Komorowski</p>
+                    <p>Janusz Korwin-Mikke</p>
+                    <p>Leszek Miller</p>
+                    <p>Beata Szydło</p>
+                    <p>Rafał Trzaskowski</p>
+                    <p>Donald Tusk</p>
+
+            </div>
+        </div>
+        <div class="panel-footer">
+            <a href="https://github.com/voss-m/Machine_Learning_project/tree/master?fbclid=IwAR1QaDWMGVhJg9zv43Uxtoawn5Hmq24bOLOybdBz1OiosU4dPfm1AHMxL6Y"> Repozytorium na Githubie</a>
+        </div>
+    </div>
+
+{% endblock %}

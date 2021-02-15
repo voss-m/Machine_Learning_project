@@ -1,0 +1,35 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}FaceRecognition{% endblock %}
+
+{% block head %}
+{{super()}}
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+{% endblock%}
+
+{% block navbar %}
+<div class="navbar navbar-inverse" role="navigation">
+
+        <div class="navbar-header" >
+            <a class="navbar-brand" href="/" style="font-size: 24px;">FaceRecognition</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li ><a href="{{ url_for('about_project') }}" style="font-size: 15px;">O projekcie</a></li>
+            <li ><a href="{{ url_for('about_us') }}" style="font-size: 15px;">Twórcy</a></li>
+        </ul>
+</div>
+{% endblock %}
+
+{% block content %}
+
+    {% for message in get_flashed_messages() %}
+        <div class="alert alert-warning">
+            <button type="button" class="close" data-dismiss="alert"></button>
+            {{ message }}
+        </div>
+    {% endfor %}
+
+    {% block page_content %}{% endblock %}
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "model.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Results{% endblock %}
+
+{% block page_content %}
+{{super()}}
+<div class="panel panel-default" style="margin-left: 25%; margin-right: 25%; margin-top: 2%; background: #c3daee">
+        <div class="panel-heading" style="font-size: 18px;color: #ffffff; text-align: center; font-weight: bold; background: #275d8b">
+            Wyniki modelu
+        </div>
+        <div class="panel-body">
+            <div class="media-body"  style="font-size: 16px;text-align: center; font-weight: bold; color: #141452">
+                <img src="static/uploads/{{filename}}" alt="{{filename}}" style="width: 15vw; height: 15vw;">
+                <p>{{result}} </p>
+                <p>Z prawdopodobieństwem: {{score}}</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

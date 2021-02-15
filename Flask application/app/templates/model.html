@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block head %}
+{{super()}}
+{{ dropzone.load_css() }}
+{{ dropzone.style('border: 2px dashed #0087F7; margin: 5%; min-height: 30vh;') }}
+{% endblock%}
+
+
+{% block title %}FaceRecognition{% endblock %}
+
+{% block page_content %}
+
+        <div class="container">
+            <h2 style = "text-align: center;">Załaduj zdjęcie i dowiedz się, który z polskich polityków się na nim znajduje</h2>
+                {{ dropzone.load_js() }}
+                {{ dropzone.create(action='upload') }}
+                {{ dropzone.config() }}
+                <div class="container" style="padding-left: 45%;">
+                    <a href="{{url_for('uploaded_file', filename=filename)}}" class="btn btn-primary">Uruchom model</a>
+                </div>
+        </div>
+
+{% endblock %}
